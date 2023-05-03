@@ -16,9 +16,9 @@ In the first part of the project, the data was cleaned to remove any values that
 
 Study Questions:
 
-1.How does mean of sleep hours vary along the age.
-2.Do woman study more than men?  Or is it the oposite?
-3.Is there any relashion between emotional exaustion from studying across the genres?
+1. How does mean of sleep hours vary along the age.
+2. Do woman study more than men?  Or is it the oposite?
+3. Is there any relashion between emotional exaustion from studying across the genres?
 
 
 
@@ -30,8 +30,8 @@ In the first part of the analysis, the mean sleep hours for each age group in th
 
 
 Study Questions:
-1.Do people watch tv more than they sleep?
-2.Is the TikTok generation sleeping less than it uses social media?
+1. Do people watch tv more than they sleep?
+2. Is the TikTok generation sleeping less than it uses social media?
 
 
 In the last part of the project, a simple linear regression analysis was performed to explore the relationship between two variables in the dataset. Specifically, the relationship between TV watching hours and sleep hours was examined and hours in social media and sleeping. A scatter plot was created to visualize the relationship, and a linear model was fitted to the data. The coefficient of determination (R-squared) was calculated to determine the strength of the relationship.
