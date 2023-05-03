@@ -56,8 +56,9 @@ for(i in na.omit(Dormem)) {
 # View the resulting table
 View(my_table)
 my_table
+
 #PARTE 2
-#Comparacao da media de Horas de estudo entre Homem
+#Comparacao da media de Horas de estudo entre Homem e mulher
 
 if(!require(dplyr)) install.packege("dplyr")
 library(dplyr)
@@ -94,13 +95,6 @@ barplot((TabelaCont1), beside = TRUE,col = c("green","purple"),
         main = "Distribuição da Resposta da questão do Burnout 1",
         ylim = c(0,25),
         legend = c("Feminino","Masculino"))
-
-
-
-
-
-
-
 
 
 
