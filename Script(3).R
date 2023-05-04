@@ -34,6 +34,9 @@ for(i in 1:nrow(Grupo10))
 
 # QUESTOES de analise descritiva bivariada
 
+
+if(!require(dplyr)) install.packege("dplyr")
+library(dplyr)
 #PARTE 1
 Dormem = unique(Grupo10$Idade, is.na=TRUE)
 
@@ -59,9 +62,6 @@ my_table
 
 #PARTE 2
 #Comparacao da media de Horas de estudo entre Homem e mulher
-
-if(!require(dplyr)) install.packege("dplyr")
-library(dplyr)
 
 Female_HorasEstudo = filter(Grupo10, Sexo == 1)
 
