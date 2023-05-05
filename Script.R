@@ -1,9 +1,6 @@
 #Leitura de dados
 # load package "readxl"
-library(readxl)
 
-Grupo10<-read_excel("Dados/AvContinua.xlsx")
-View(AvContinua)
 
 #Fim da leitura dos dados
 
@@ -79,11 +76,19 @@ perc<-round(prop.table(table(Objeto))*100,2)
 ## Tabela com a library pander
 
 tabela<-cbind(absol,relat,perc)
+tabela
 colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'Idade'")
+             caption = "Tabela de frequencia para variavel 'Idade'")
+
+
+nomes = sort(unique(Objeto))
+# plot the table as a bar chart
+barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'Idade'")
+
+
 
 #Sexo
 # Calcular Frequencia Absoluta
@@ -100,11 +105,18 @@ perc<-round(prop.table(table(Objeto))*100,2)
 ## Tabela com a library pander
 
 tabela<-cbind(absol,relat,perc)
+plot()
 colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'Sexo'")
+             caption = "Tabela de frequencia para variavel 'Sexo'")
+
+nomes <- sort(unique(Objeto))
+
+labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
+
+pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de Sexo")
 
 #Curso que frequenta
 # Calcular Frequencia Absoluta
@@ -126,7 +138,16 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'Curso'")
+             caption = "Tabela de frequencia para variavel 'Curso'")
+
+
+nomes <- sort(unique(Objeto))
+
+labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
+
+pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de Curso")
+
+
 
 #Ano curricular que frequenta
 # Calcular Frequencia Absoluta
@@ -147,7 +168,15 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'AnoCurricular'")
+             caption = "Tabela de frequencia para variavel 'AnoCurricular'")
+
+
+nomes <- sort(unique(Objeto))
+
+labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
+
+pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de AnoCurricular")
+
 
 #Este curso foi a minha 1º opcao?
 # Calcular Frequencia Absoluta
@@ -169,7 +198,17 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'opcao1'")
+             caption = "Tabela de frequencia para variavel 'opcao1'")
+
+
+nomes <- sort(unique(Objeto))
+
+labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
+
+pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de opcao1")
+
+
+
 
 #Fui eu que escohi este curso
 # Calcular Frequencia Absoluta
@@ -191,7 +230,16 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'Escolhi'")
+             caption = "Tabela de frequencia para variavel 'Escolhi'")
+
+
+
+nomes <- sort(unique(Objeto))
+
+labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
+
+pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de Escolhi")
+
 
 #Tempo de deslocaocao
 # Calcular Frequencia Absoluta
@@ -213,7 +261,12 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'TempoDesloca'")
+             caption = "Tabela de frequencia para variavel 'TempoDesloca'")
+
+nomes = sort(unique(Objeto))
+# plot the table as a bar chart
+barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'TempoDesloca'")
+
 
 #HorasEStudo
 # Calcular Frequencia Absoluta
@@ -235,7 +288,13 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'HorasEstudo'")
+             caption = "Tabela de frequencia para variavel 'HorasEstudo'")
+
+
+nomes = sort(unique(Objeto))
+# plot the table as a bar chart
+barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasEstudo'")
+
 
 #HorasRedes
 # Calcular Frequencia Absoluta
@@ -257,7 +316,13 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'HorasRedes'")
+             caption = "Tabela de frequencia para variavel 'HorasRedes'")
+
+
+nomes = sort(unique(Objeto))
+# plot the table as a bar chart
+barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasRedes'")
+
 
 #HorasTV
 # Calcular Frequencia Absoluta
@@ -279,7 +344,13 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'HorasTV'")
+             caption = "Tabela de frequencia para variavel 'HorasTV'")
+
+
+nomes = sort(unique(Objeto))
+# plot the table as a bar chart
+barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasTV'")
+
 
 #HorasSono
 # Calcular Frequencia Absoluta
@@ -301,7 +372,13 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'HorasSono'")
+             caption = "Tabela de frequencia para variavel 'HorasSono'")
+
+nomes = sort(unique(Objeto))
+nomes
+# plot the table as a bar chart
+barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasSono'")
+
 
 #Se obtivemos conehcimento do programa de mentoria
 # Calcular Frequencia Absoluta
@@ -323,7 +400,16 @@ colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
                     "Percentagem")
 
 pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequ�ncia para vari�vel 'Idade'")
+             caption = "Tabela de frequencia para variavel 'PMentoria'")
+
+
+
+nomes <- sort(unique(Objeto))
+
+labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
+
+pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de PMentoria")
+
 
 #ANALISE DESCRITIVA BIVARIAVA
 if(!require(dplyr)) install.packege("dplyr")
@@ -394,12 +480,11 @@ barplot((TabelaCont1), beside = TRUE,col = c("green","purple"),
 
 
 if(!require(dplyr)) install.packege("ggplot2")
-install.packages("ggplot2")
 library(ggplot2)
 
 
-plot(Grupo10$HorasSono,Grupo10$HorasTV,
-     xlim=c(1,12),ylim=c(1,12),
+barplot(Grupo10$HorasSono,Grupo10$HorasTV,
+     xlim=c(1,24),ylim=c(1,24),
      xlab="Horas de Sono",
      ylab="Horas de TV")
 
