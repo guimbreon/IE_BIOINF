@@ -4,9 +4,6 @@ This project is for the class of introduction to Statistics, it includes data cl
 
 ###
 
-
-
-
 ### Dataset
 
 The "Grupo10" dataset includes information about a group of individuals, such as their age, sex, study hours, sleep hours, social media usage hours, and TV watching hours. It also includes their responses to several burnout-related questions. 
@@ -45,6 +42,11 @@ Study Questions:
 
 
 In the fourth part of the project, a simple linear regression analysis was performed to explore the relationship between two variables in the dataset. Specifically, the relationship between TV watching hours and sleep hours was examined and hours in social media and sleeping. A scatter plot was created to visualize the relationship, and a linear model was fitted to the data. The coefficient of determination (R-squared) was calculated to determine the strength of the relationship.
+
+
+### Bivariate Contingency Table
+
+This R code creates a contingency table to analyze the relationship between two variables. The code calculates the frequency of each combination of the two variables and displays the results in a table that shows both the absolute and relative frequencies. The pander package is used to format the table for easy reading. The code can be used with any two variables to explore the distribution and relationship between them.
 
 ### Conclusion
 
