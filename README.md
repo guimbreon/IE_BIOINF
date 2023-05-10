@@ -29,9 +29,9 @@ It used R and this libraries:
 
 To install and run this project, follow these steps:
 
-1. Clone the repository to your local machine
-2. Install the required R packages
-3. Run the main script for each part of the project
+1. Clone the repository to your local machine.
+2. Install the required R packages.
+3. Run the main script for each part of the project.
 
 ## License
 
