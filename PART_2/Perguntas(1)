@@ -1,0 +1,34 @@
+construção de intervalos de confiança (2 i.c. para a proporção populacional + 2 i.c. para a média populacional)
+2 i.c. para a proporção populacional
+	Questão 1: Qual é a média de idade dos estudantes?/Qual é o intervalo de confiança para a média populacional da idade dos estudantes?
+
+	Questão 3: Qual é o intervalo de confiança para a diferença média populacional nas horas diárias dedicadas às redes sociais entre estudantes do primeiro e do terceiro ano curricular?
+	
+2 i.c. para a média populacional
+
+	Questão 2: Qual é o intervalo de confiança para a proporção populacional de homens que escolhem um curso específico como primeira opção?
+
+
+	Questão 4: Qual é o intervalo de confiança para a proporção populacional de estudantes de Bioinformática que possuem conhecimento no Programa de Mentoria?
+	
+	
+aplicação de testes de hipótese (2 Testes Binomial + 2 Testes t-Student + 2 Testes de Wilcoxon)	
+
+
+2 Testes Binomial
+	Questão 1: Qual é o resultado do teste de hipótese binomial para a proporção populacional de estudantes de L. Biotecnologia que escolhem a opção 1?
+	
+	Questão 2: Qual é o resultado do teste de hipótese binomial para a proporção populacional de horas dedicadas às redes sociais que são maiores ou iguais a 0?
+ 
+ 
+ 2 Testes t-Student
+	Questão 3: Há diferença significativa nas horas de estudo entre estudantes do primeiro ano e do último ano curricular?
+	
+	Questão 4: Há diferença significativa nas horas dedicadas às redes sociais entre estudantes do gênero feminino e a média populacional?
+
+
+2 Testes de Wilcoxon
+	Questão 5: Há diferença significativa no tempo de deslocamento para a primeira opção entre aqueles que escolhem a opção 1?
+	
+	Questão 6: Há diferença significativa nas horas dedicadas às redes sociais entre estudantes do gênero masculino e a média populacional?
+	

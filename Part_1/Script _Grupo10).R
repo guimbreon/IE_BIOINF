@@ -488,7 +488,7 @@ for(i in na.omit(Dormem)) {
 
 # View the resulting table
 View(my_table)
-my_table
+na.omit(my_table)
 
 #PARTE 2
 #Comparacao da media de Horas de estudo entre Homem e mulher
