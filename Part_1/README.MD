@@ -2,8 +2,6 @@
 
 This project is for the class of introduction to Statistics, it includes data cleaning, descriptive bivariate analysis and Regression Analysis of a dataset named "Grupo10".
 
-###
-
 ### Dataset
 
 The "Grupo10" dataset includes information about a group of individuals, such as their age, sex, study hours, sleep hours, social media usage hours, and TV watching hours. It also includes their responses to several burnout-related questions. 
@@ -35,7 +33,6 @@ In the first part of the analysis, the mean sleep hours for each age group in th
 
 ### Regression Analysis
 
-
 Study Questions:
 1. Do people watch tv more than they sleep?
 2. Is the TikTok generation sleeping less than it uses social media?
@@ -47,6 +44,10 @@ In the fourth part of the project, a simple linear regression analysis was perfo
 ### Bivariate Contingency Table
 
 This R code creates a contingency table to analyze the relationship between two variables. The code calculates the frequency of each combination of the two variables and displays the results in a table that shows both the absolute and relative frequencies. The pander package is used to format the table for easy reading. The code can be used with any two variables to explore the distribution and relationship between them.
+
+NOTE: This code is in a separete [file](bivariate_contigence.R)
+
+
 
 ### Conclusion
 
