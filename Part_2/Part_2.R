@@ -249,189 +249,150 @@ labels <- paste(nomes, sprintf("(%1.1f%%)", perc), sep=" ")
 pie(perc, labels=labels, col=rainbow(length(nomes)), main="Grafico circular de Escolhi")
 
 
-#Tempo de deslocaocao
+# Tempo de deslocacao
 # Calcular Frequencia Absoluta
-
-Objeto = Grupo10$TempoDesloca
-absol<-table(Objeto)
+library(pander)
+Objeto <- Grupo10$TempoDesloca
+absol <- table(Objeto)
 
 # Calcular Frequencia Relativa
-relat<-round(prop.table(table(Objeto)),3)
+relat <- round(prop.table(table(Objeto)), 3)
 
 # Calcular Frequencia Relativa em percentagem
-perc<-round(prop.table(table(Objeto))*100,2)
-
+perc <- round(prop.table(table(Objeto)) * 100, 2)
 
 ## Tabela com a library pander
+tabela <- cbind(absol, relat, perc)
+colnames(tabela) <- c("Fr.Absoluta", "Fr.Relativa", "Percentagem")
+pandoc.table(tabela, plain.ascii = TRUE, caption = "Tabela de frequencia para variavel 'TempoDesloca'")
 
-tabela<-cbind(absol,relat,perc)
-colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
-                    "Percentagem")
-
-pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequencia para variavel 'TempoDesloca'")
-
-nomes = sort(unique(Objeto))
+nomes <- sort(unique(Objeto))
 # plot the table as a bar chart
 barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'TempoDesloca'")
 
-Objeto
+# Boxplot
+boxplot(Objeto, main = "Boxplot para a variavel 'TempoDesloca'")
 
-var(Grupo10$TempoDesloca,
-    na.rm = TRUE)
+var(Grupo10$TempoDesloca, na.rm = TRUE)
 # desvio padrao
-sd(Grupo10$TempoDesloca,
-   na.rm = TRUE)
-
+sd(Grupo10$TempoDesloca, na.rm = TRUE)
 var(na.omit(Objeto))
 
-
-#HorasEStudo
+# HorasEStudo
 # Calcular Frequencia Absoluta
-
-Objeto = Grupo10$HorasEstudo
-absol<-table(Objeto)
+Objeto <- Grupo10$HorasEstudo
+absol <- table(Objeto)
 
 # Calcular Frequencia Relativa
-relat<-round(prop.table(table(Objeto)),3)
+relat <- round(prop.table(table(Objeto)), 3)
 
 # Calcular Frequencia Relativa em percentagem
-perc<-round(prop.table(table(Objeto))*100,2)
-
+perc <- round(prop.table(table(Objeto)) * 100, 2)
 
 ## Tabela com a library pander
+tabela <- cbind(absol, relat, perc)
+colnames(tabela) <- c("Fr.Absoluta", "Fr.Relativa", "Percentagem")
+pandoc.table(tabela, plain.ascii = TRUE, caption = "Tabela de frequencia para variavel 'HorasEstudo'")
 
-tabela<-cbind(absol,relat,perc)
-colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
-                    "Percentagem")
-
-pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequencia para variavel 'HorasEstudo'")
-
-
-nomes = sort(unique(Objeto))
+nomes <- sort(unique(Objeto))
 # plot the table as a bar chart
 barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasEstudo'")
 
-summary(Grupo10$HorasEstudo)
+# Boxplot
+boxplot(Objeto, main = "Boxplot para a variavel 'HorasEstudo'")
 
 var(na.omit(Objeto))
-
-var(Grupo10$HorasEstudo,
-    na.rm = TRUE)
+var(Grupo10$HorasEstudo, na.rm = TRUE)
 # desvio padrao
-sd(Grupo10$HorasEstudo,
-   na.rm = TRUE)
-#HorasRedes
-# Calcular Frequencia Absoluta
+sd(Grupo10$HorasEstudo, na.rm = TRUE)
 
-Objeto = Grupo10$HorasRedes
-absol<-table(Objeto)
+# HorasRedes
+# Calcular Frequencia Absoluta
+Objeto <- Grupo10$HorasRedes
+absol <- table(Objeto)
 
 # Calcular Frequencia Relativa
-relat<-round(prop.table(table(Objeto)),3)
+relat <- round(prop.table(table(Objeto)), 3)
 
 # Calcular Frequencia Relativa em percentagem
-perc<-round(prop.table(table(Objeto))*100,2)
-
+perc <- round(prop.table(table(Objeto)) * 100, 2)
 
 ## Tabela com a library pander
+tabela <- cbind(absol, relat, perc)
+colnames(tabela) <- c("Fr.Absoluta", "Fr.Relativa", "Percentagem")
+pandoc.table(tabela, plain.ascii = TRUE, caption = "Tabela de frequencia para variavel 'HorasRedes'")
 
-tabela<-cbind(absol,relat,perc)
-colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
-                    "Percentagem")
+nomes <- sort(unique(Objeto))
 
-pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequencia para variavel 'HorasRedes'")
-
-
-nomes = sort(unique(Objeto))
-
-var(Grupo10$Idade,
-    na.rm = TRUE)
+var(Grupo10$Idade, na.rm = TRUE)
 # desvio padrao
-sd(Grupo10$Idade,
-   na.rm = TRUE)
+sd(Grupo10$Idade, na.rm = TRUE)
 
 # plot the table as a bar chart
 barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasRedes'")
 
+# Boxplot
+boxplot(Objeto, main = "Boxplot para a variavel 'HorasRedes'")
 
 var(na.omit(Objeto))
 
-
-#HorasTV
+# HorasTV
 # Calcular Frequencia Absoluta
-
-Objeto = Grupo10$HorasTV
-absol<-table(Objeto)
+Objeto <- Grupo10$HorasTV
+absol <- table(Objeto)
 
 # Calcular Frequencia Relativa
-relat<-round(prop.table(table(Objeto)),3)
+relat <- round(prop.table(table(Objeto)), 3)
 
 # Calcular Frequencia Relativa em percentagem
-perc<-round(prop.table(table(Objeto))*100,2)
-
+perc <- round(prop.table(table(Objeto)) * 100, 2)
 
 ## Tabela com a library pander
+tabela <- cbind(absol, relat, perc)
+colnames(tabela) <- c("Fr.Absoluta", "Fr.Relativa", "Percentagem")
+pandoc.table(tabela, plain.ascii = TRUE, caption = "Tabela de frequencia para variavel 'HorasTV'")
 
-tabela<-cbind(absol,relat,perc)
-colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
-                    "Percentagem")
-
-pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequencia para variavel 'HorasTV'")
-
-
-nomes = sort(unique(Objeto))
+nomes <- sort(unique(Objeto))
 # plot the table as a bar chart
 barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasTV'")
 
+# Boxplot
+boxplot(Objeto, main = "Boxplot para a variavel 'HorasTV'")
 
 var(na.omit(Objeto))
 
-var(Grupo10$HorasTV,
-    na.rm = TRUE)
+var(Grupo10$HorasTV, na.rm = TRUE)
 # desvio padrao
-  sd(Grupo10$HorasTV,
-   na.rm = TRUE)
+sd(Grupo10$HorasTV, na.rm = TRUE)
 
-#HorasSono
+# HorasSono
 # Calcular Frequencia Absoluta
-
-Objeto = Grupo10$HorasSono
-absol<-table(Objeto)
+Objeto <- Grupo10$HorasSono
+absol <- table(Objeto)
 
 # Calcular Frequencia Relativa
-relat<-round(prop.table(table(Objeto)),3)
+relat <- round(prop.table(table(Objeto)), 3)
 
 # Calcular Frequencia Relativa em percentagem
-perc<-round(prop.table(table(Objeto))*100,2)
-
+perc <- round(prop.table(table(Objeto)) * 100, 2)
 
 ## Tabela com a library pander
+tabela <- cbind(absol, relat, perc)
+colnames(tabela) <- c("Fr.Absoluta", "Fr.Relativa", "Percentagem")
+pandoc.table(tabela, plain.ascii = TRUE, caption = "Tabela de frequencia para variavel 'HorasSono'")
 
-tabela<-cbind(absol,relat,perc)
-colnames(tabela)<-c("Fr.Absoluta","Fr.Relativa",
-                    "Percentagem")
-
-pandoc.table(tabela, plain.ascii = TRUE,
-             caption = "Tabela de frequencia para variavel 'HorasSono'")
-
-nomes = sort(unique(Objeto))
-nomes
-
-var(Grupo10$HorasSono,
-    na.rm = TRUE)
+nomes <- sort(unique(Objeto))
+var(Grupo10$HorasSono, na.rm = TRUE)
 # desvio padrao
-sd(Grupo10$HorasSono,
-   na.rm = TRUE)
+sd(Grupo10$HorasSono, na.rm = TRUE)
 # plot the table as a bar chart
 barplot(perc, names.arg = nomes, xlab = "Valores da Variavel", ylab = "Percentagem", main = "Grafico de barras para a variavel 'HorasSono'")
 
-
+# Boxplot
+boxplot(Objeto, main = "Boxplot para a variavel 'HorasSono'")
 
 var(na.omit(Objeto))
+
 
 #Se obtivemos conehcimento do programa de mentoria
 # Calcular Frequencia Absoluta
@@ -490,6 +451,13 @@ for(i in na.omit(Dormem)) {
 View(my_table)
 na.omit(my_table)
 
+
+
+# Boxplot
+boxplot(Grupo10$HorasSono ~ Grupo10$Idade, main = "Boxplot das Horas de Sono por Idade", xlab = "Idade", ylab = "Horas de Sono")
+
+
+
 #PARTE 2
 #Comparacao da media de Horas de estudo entre Homem e mulher
 
@@ -523,6 +491,9 @@ pandoc.table(diff_horas_estudo,plain.ascii = TRUE, caption = "Diferença entre a
 View(Mean_HorasEstudo)  #Ver a media de Horas de Estudo
 View(Diff_HorasEstudo)  #Ver a diferenca entre as Horas de estudo
 
+# Boxplot
+boxplot(Grupo10$HorasEstudo ~ Grupo10$Sexo, main = "Boxplot das Horas de Estudo por Gênero", xlab = "Gênero", ylab = "Horas de Estudo")
+
 
 #PARTE 3
 TabelaCont1 = table(Grupo10$Sexo,Grupo10$Burnout_P1)
@@ -545,44 +516,52 @@ barplot((TabelaCont1), beside = TRUE,col = c("green","purple"),
 
 if(!require(dplyr)) install.packege("ggplot2")
 library(ggplot2)
+-
+  regressao <- plot(Grupo10$HorasSono,Grupo10$HorasTV,
+                    xlim=c(1,9),ylim=c(1,8),
+                    xlab="Horas de Sono",
+                    ylab="Horas de TV")
 
 
-barplot(Grupo10$HorasSono,Grupo10$HorasTV,
-     xlim=c(1,24),ylim=c(1,24),
-     xlab="Horas de Sono",
-     ylab="Horas de TV")
+cor(Grupo10$HorasSono, Grupo10$TempoDesloca, use = "pairwise")
 
-
-
-
-
-cor(Grupo10$HorasSono,Grupo10$TempoDesloca,use = "pairwise")
-
-modelo = lm(Grupo10$HorasTV ~ Grupo10$HorasSono)
-
-modelo
-
+modelo <- lm(Grupo10$HorasTV ~ Grupo10$HorasSono)
+abline(modelo)
 
 R2 <- summary(modelo)$r.squared
-cat("O coeficiente de determinacao tem o valor ",round(R2,4))
+cat("O coeficiente de determinação tem o valor ", round(R2, 4))
+
+# Coeficientes da reta de regressão
+intercepto <- coef(modelo)[1]
+coef_inclinacao <- coef(modelo)[2]
+
+cat("A reta de regressão linear é dada pela equação:")
+cat(paste("HorasTV =", coef_inclinacao, "* HorasSono +", intercepto))
+
+
 
 #Parte 2
-plot(Grupo10$HorasRedes,Grupo10$HorasSono,
-     xlim=c(1,10),ylim=c(1,15),
-     xlab="Horas de Redes",
-     ylab="Horas de Sono")
+regressao = plot(Grupo10$HorasRedes,Grupo10$HorasSono,
+                 xlim=c(1,10),ylim=c(1,15),
+                 xlab="Horas de Redes",
+                 ylab="Horas de Sono")
 
 
-
-
-
-cor(Grupo10$HorasRedes,Grupo10$TempoDesloca,use = "pairwise")
+cor(Grupo10$HorasRedes,Grupo10$HorasSono,use = "pairwise")
 
 modelo = lm(Grupo10$HorasSono ~ Grupo10$HorasRedes)
 
 modelo
-
+abline(modelo)
 
 R2 <- summary(modelo)$r.squared
 cat("O coeficiente de determinacao tem o valor ",round(R2,4))
 
+
+
+# Coeficientes da reta de regressão
+intercepto <- coef(modelo)[1]
+coef_inclinacao <- coef(modelo)[2]
+
+cat("A reta de regressão linear é dada pela equação:")
+cat(paste("HorasSono =", coef_inclinacao, "* HorasRedes +", intercepto))
