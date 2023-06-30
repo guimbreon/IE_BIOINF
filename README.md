@@ -1,42 +1,45 @@
-# Project Title
+# Título do Projeto
 
-This is a project for IE class that involves multiple parts, all implemented in R.
+Este é um projeto para a disciplina de IE que envolve várias partes, todas implementadas em R.
 
-## Description
+## Descrição
 
-The project is designed to simulate a manufacturing process and analyze its performance using various techniques and tools. The project consists of multiple parts, each representing a different stage in the process.
+O projeto é projetado para simular um processo de fabricação e analisar seu desempenho usando várias técnicas e ferramentas. O projeto consiste em várias partes, cada uma representando uma etapa diferente do processo.
 
-## Data file
+## Arquivo de Dados
 
-In this file, we have the dataset in study, the survey in study, and the Project Guide.
+Neste arquivo, temos o conjunto de dados em estudo, a pesquisa em estudo e o Guia do Projeto.
 
-## Parts
+## Partes
 
-### Part 1: Data Cleaning, Univariate and Bivariate Descriptive Analysis, and Linear Regression
+### Parte 1: Limpeza de Dados, Análise Descritiva Univariada e Bivariada e Regressão Linear
 
-The first part of the project involves cleaning the data so that we can get correct results. It also includes performing univariate and bivariate descriptive analysis to gain insights into the variables. Additionally, a linear regression analysis is conducted to explore the relationship between variables.
+A primeira parte do projeto envolve a limpeza dos dados para obtermos resultados corretos. Também inclui a realização de análises descritivas univariadas e bivariadas para obter insights sobre as variáveis. Além disso, é realizada uma análise de regressão linear para explorar a relação entre as variáveis.
 
-### Part 2: Statistical Analysis
+### Parte 2: Análise Estatística
 
-The second part of the project focuses on statistical analysis techniques to draw conclusions and make inferences based on the data. This involves calculating confidence intervals, conducting hypothesis testing, and analyzing the results.
+A segunda parte do projeto concentra-se em técnicas de análise estatística para tirar conclusões e fazer inferências com base nos dados. Isso envolve o cálculo de intervalos de confiança, realização de testes de hipóteses e análise dos resultados.
 
-## Technologies Used
+## Tecnologias Utilizadas
 
-The project is implemented using R programming language and the following libraries:
+O projeto é implementado usando a linguagem de programação R e as seguintes bibliotecas:
 
 - dplyr
 - ggplot2
 - pander
 
-## Installation
+## Instalação
 
-To install and run this project, follow these steps:
+Para instalar e executar este projeto, siga estas etapas:
 
-1. Clone the repository to your local machine.
-2. Install the required R packages (dplyr, ggplot2, pander).
-3. Run the main script for each part of the project.
+1. Clone o repositório para a sua máquina local.
+2. Instale os pacotes R necessários (dplyr, ggplot2, pander).
+3. Execute o script principal para cada parte do projeto.
 
-## License
+## In english:
+[README.md](english/README.md)
 
-These projects are licensed under the GNU General Public License. See the [LICENSE](LICENSE) file for more information.
 
+## Licença
+
+Estes projetos estão licenciados sob a Licença Pública Geral GNU. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
