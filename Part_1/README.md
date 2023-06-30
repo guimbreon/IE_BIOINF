@@ -46,7 +46,7 @@ Este código R cria uma tabela de contingência para analisar a relação entre 
 NOTA: Este código está em um arquivo separado [aqui](bivariate_contigence.R).
 
 ## In English:
-[../english/README.MD]
+[README.MD](../english/README.MD)
 
 ### Conclusão
 
