@@ -50,4 +50,4 @@ Para quaisquer perguntas ou problemas, entre em contato com os autores do script
 
 
 ## In English:
-[../english/README_2.MD]
+[README.MD](../english/README_2.MD)
