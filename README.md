@@ -1,6 +1,6 @@
 # Título do Projeto
 
-Este é um projeto para a disciplina de IE que envolve várias partes, todas implementadas em R.
+Este é um projeto para a disciplina de IE do curso de Bioinformatica que envolve várias partes, todas implementadas em R.
 
 ## Descrição
 
